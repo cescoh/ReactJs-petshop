@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-            { loading ? <h1>Cargando detalle...</h1> :
+            { loading ? <img src="https://codigofuente.io/wp-content/uploads/2018/09/progress.gif"></img> :
         <div style={{flexDirection:"row", flexWrap:"wrap"}}>
         <ItemDetail data={data} param={id} />
         </div>

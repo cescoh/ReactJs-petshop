@@ -25,7 +25,7 @@ const ItemListContainer = ({ title }) => {
 
   return (
     <div>
-      { loading ? <h1>Cargando...</h1> :
+      { loading ? <img src="https://codigofuente.io/wp-content/uploads/2018/09/progress.gif"></img> :
       <div style={{display: "flex", flexDirection:"row", flexWrap:"wrap"}}>
         <ItemList products={data} title={title}/>
       </div>
