@@ -5,7 +5,6 @@ const CartContext = createContext([])
 export const useCartContext = () => useContext(CartContext)
 
 export const CartContextProvider = ({ children }) => {
-    // estados y funciones globales ACA
     const [cartList, setCartList] = useState([])
     const [orderBuyer, setorderBuyer] = useState([])
 
@@ -43,7 +42,6 @@ const deleteProd = (id) => {
 
 const iconCart = () => cartList.reduce((acum, valor) => acum + valor.quantity, 0);
 
-//spread de cart para que no pise los elementos
     return(
         <CartContext.Provider 
         value={{

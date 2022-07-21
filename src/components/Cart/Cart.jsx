@@ -5,7 +5,6 @@ import CartTable from "../CartTable/CartTable"
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import CartButtons from '../CartButtons/CartButtons';
 import CartForm from '../CartForm/CartForm';
-import Swal from 'sweetalert2'
 
 
 export default function Cart() {

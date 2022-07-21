@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import Button from '@mui/material/Button';
+import { ButtonGroup } from "@mui/material";
 
 const ButtonIn = () => {
   return (
     <>
+    <ButtonGroup>
     <Link to="/cart">
-        <button
+        <Button
         className='btn btn-outline-primary'
-        >Ir al carrito o Terminar compra</button>
+        >Ir al carrito o Terminar compra</Button>
     </Link>
     <Link to="/">
-        <button
+        <Button
         className='btn btn-outline-primary'
-        >Seguir comprando</button>
+        >Seguir comprando</Button>
     </Link>
+    </ButtonGroup>
     </>
   )
 }
